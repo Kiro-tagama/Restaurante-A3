@@ -1,0 +1,15 @@
+<resources>
+<string name="app_name">Restaurante A3</string>
+
+<!-- intro -->
+<string name="quem_e_voce">Quem é você?</string>
+<string name="cliente">Cliente</string>
+<string name="restaurante">Restaurante</string>
+<string name="ou">ou</string>
+
+<!-- login and cadaster -->
+<string name="login">Login</string>
+<string name="cadastrar">Cadastrar</string>
+<string name="com_conta">Já possui cadastro?</string>
+<string name="sem_conta">Ainda não possui cadastro?</string>
+</resources>
