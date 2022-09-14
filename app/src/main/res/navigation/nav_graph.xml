@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/LoginClient">
+    app:startDestination="@id/FirstFragment">
 
     <fragment
         android:id="@+id/FirstFragment"
@@ -16,8 +16,11 @@
 
     <fragment
         android:id="@+id/LoginClient"
-        android:name="com.example.restaurantea3.login_cliente"
+        android:name="com.example.restaurantea3.Login_cliente"
         tools:layout="@layout/login_cliente">
+        <action
+            android:id="@+id/action_LoginClient_to_CadastroCliente"
+            app:destination="@id/CadastroCliente" />
     </fragment>
 
     <fragment

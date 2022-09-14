@@ -13,11 +13,11 @@
         class="android.support.v7.widget.ActionMenuView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#B31C0D02"
-        android:padding="20dp"
+        android:background="@drawable/view_cadastro"
+        android:backgroundTint="#A6F5E6C2"
         android:orientation="vertical"
+        android:padding="30dp"
         android:textAlignment="center"
-        android:minWidth="200px"
         app:barrierDirection="top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/quem_e_voce"
-            android:textColor="@color/white"
             android:textSize="30sp"
             android:paddingVertical="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +42,8 @@
             android:id="@+id/bt_cliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:textColor="@color/black"
+            android:background="@drawable/botao_black"
+            android:textColor="@color/white"
             android:text="@string/cliente" />
 
         <TextView
@@ -52,15 +51,15 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text="@string/ou"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:paddingVertical="5dp"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:textColor="@color/black"
+            android:background="@drawable/botao_black"
+            android:textColor="@color/white"
             android:text="@string/restaurante" />
     </view>
 

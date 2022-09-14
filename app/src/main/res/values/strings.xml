@@ -13,7 +13,7 @@
     <string name="cadastro">Cadastro</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="com_conta" ><u>Já possui cadastro?</u></string>
-    <string name="sem_conta">Ainda não possui cadastro?</string>
+    <string name="sem_conta"><u>Ainda não possui cadastro?</u></string>
     <string name="dig_email">Digite seu e-mail</string>
     <string name="dig_senha">Digite a sua senha</string>
     <string name="dig_nome">Digite seu nome</string>
