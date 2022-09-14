@@ -1,5 +1,5 @@
 <resources>
-<string name="app_name">Restaurante A3</string>
+    <string name="app_name">Restaurante A3</string>
 
     <!-- intro -->
     <string name="quem_e_voce">Quem é você?</string>
@@ -12,6 +12,9 @@
     <string name="entrar">Entrar</string>
     <string name="cadastro">Cadastro</string>
     <string name="cadastrar">Cadastrar</string>
-    <string name="com_conta">Já possui cadastro?</string>
+    <string name="com_conta" ><u>Já possui cadastro?</u></string>
     <string name="sem_conta">Ainda não possui cadastro?</string>
+    <string name="dig_email">Digite seu e-mail</string>
+    <string name="dig_senha">Digite a sua senha</string>
+    <string name="dig_nome">Digite seu nome</string>
 </resources>

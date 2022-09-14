@@ -6,17 +6,6 @@
     android:background="@drawable/background_intro"
     >
 
-    <TextView
-        android:id="@+id/textCadastro2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cadastro"
-        android:textSize="34sp"
-        android:visibility="visible"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="99dp" />
-
     <View
         android:id="@+id/view2"
         android:layout_width="297dp"
@@ -39,6 +28,17 @@
         tools:layout_editor_absoluteX="90dp"
         tools:layout_editor_absoluteY="99dp" />
 
+    <TextView
+        android:id="@+id/textCadastroRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurante"
+        android:textSize="34sp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="144dp" />
+
     <EditText
             android:id="@+id/inputEmail"
             android:layout_width="wrap_content"
@@ -50,19 +50,19 @@
             tools:layout_editor_absoluteY="249dp"
             tools:ignore="MissingConstraints" />
 
-        <EditText
-            android:id="@+id/inputSenha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/dig_senha"
-            android:inputType="textPassword"
-            android:typeface="normal"
-            tools:layout_editor_absoluteX="90dp"
-            tools:layout_editor_absoluteY="308dp"
-            tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/inputSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dig_senha"
+        android:inputType="textPassword"
+        android:typeface="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="307dp" />
 
-        <EditText
+    <EditText
             android:id="@+id/inputNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             tools:layout_editor_absoluteY="189dp"
             tools:ignore="MissingConstraints" />
 
-     <Button
+    <Button
         android:id="@+id/botaoCadastrar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -82,8 +82,8 @@
         android:textAllCaps="false"
         android:textColor="#F5E6C2"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="389dp" />
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="391dp" />
 
     <TextView
             android:id="@+id/textViewComCadastro"
