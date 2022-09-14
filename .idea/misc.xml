@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aryas/AndroidStudioProjects/Restaurante-A3/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/aryas/AndroidStudioProjects/Restaurante-A3/app/src/main/res/layout/cadastro_cliente.xml" value="0.9" />
+        <entry key="..\:/Users/aryas/AndroidStudioProjects/Restaurante-A3/app/src/main/res/layout/login_cliente.xml" value="0.3625" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/content_main.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/loginCliente.xml" value="0.25" />

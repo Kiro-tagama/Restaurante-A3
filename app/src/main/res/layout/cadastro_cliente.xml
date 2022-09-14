@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_intro"
+    >
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro"
+            android:textSize="34sp"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="99dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite seu e-mail"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="249dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite a sua senha"
+            android:inputType="textPassword"
+            android:typeface="normal"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="308dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="189dp" />
+
+        <Button
+            android:id="@+id/botaoCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="387dp"
+            android:bottomLeftRadius="7dp"
+            android:bottomRightRadius="7dp"
+            android:topLeftRadius="7dp"
+            android:topRightRadius="7dp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Já tenho uma conta"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="473dp" />
+
+</android.support.constraint.ConstraintLayout>
