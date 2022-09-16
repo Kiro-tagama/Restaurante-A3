@@ -12,9 +12,18 @@
     <string name="entrar">Entrar</string>
     <string name="cadastro">Cadastro</string>
     <string name="cadastrar">Cadastrar</string>
-    <string name="com_conta" ><u>Já possui cadastro?</u></string>
+    <string name="com_conta"><u>Já possui cadastro?</u></string>
     <string name="sem_conta"><u>Ainda não possui cadastro?</u></string>
     <string name="dig_email">Digite seu e-mail</string>
     <string name="dig_senha">Digite a sua senha</string>
     <string name="dig_nome">Digite seu nome</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

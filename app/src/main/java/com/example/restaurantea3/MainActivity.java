@@ -1,19 +1,10 @@
 package com.example.restaurantea3;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.restaurantea3.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +12,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+
+        Button button = (Button) findViewById(R.id.bt_cliente);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(android.view.View view) {
+                Intent intent = new Intent();
+                intent.setClass(getApplicationContext(),Login_cliente.class);
+                startActivity(intent);
+            }
+        });
+    };
 
 
 }
