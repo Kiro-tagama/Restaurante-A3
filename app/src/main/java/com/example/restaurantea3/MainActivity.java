@@ -22,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button bt_restaurante = (Button) findViewById(R.id.bt_restaurante);
+        bt_restaurante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(android.view.View view) {
+                Intent intent = new Intent();
+                //intent.setClass(getApplicationContext(),Login_restaurante.class);
+                startActivity(intent);
+            }
+        });
     };
 
 
