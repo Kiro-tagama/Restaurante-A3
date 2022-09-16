@@ -7,3 +7,4 @@ Aplicativo Android criado para USJT, o app tem a finalidade de fazer reservas em
 - Matheus Gama
 - Felipe Schmitz
 - Alexandre de Souza
+- Juan
