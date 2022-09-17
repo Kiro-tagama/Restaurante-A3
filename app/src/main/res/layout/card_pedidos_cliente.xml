@@ -11,13 +11,13 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="108dp"
-        android:layout_height="111dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_marginEnd="108dp"
         android:background="#00FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/open_qr_cliente"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -52,14 +52,14 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/open_qr_cliente"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:srcCompat="@drawable/ic_edit" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/open_qr_cliente"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginEnd="111dp"
@@ -80,6 +80,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/open_qr_cliente"
         app:srcCompat="@drawable/ic_trash" />
 </android.support.constraint.ConstraintLayout>
