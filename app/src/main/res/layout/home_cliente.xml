@@ -16,7 +16,7 @@
         android:background="@drawable/view_menu_cliente">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/input_pesquisa"
             android:layout_width="281dp"
             android:layout_height="46dp"
             android:layout_marginStart="16dp"
@@ -37,7 +37,6 @@
             app:layout_anchorGravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editText"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_user"
             tools:ignore="InvalidId" />
@@ -55,7 +54,8 @@
             android:orientation="vertical"
             android:paddingHorizontal="10dp">
 
-            <include layout="@layout/card_restaurantes" />
+            <include layout="@layout/card_restaurantes"
+                android:id="@+id/card_restaurante" />
 
             <include layout="@layout/card_restaurantes" />
 

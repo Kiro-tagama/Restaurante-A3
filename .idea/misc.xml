@@ -33,6 +33,7 @@
         <entry key="..\:/Users/aryas/AndroidStudioProjects/Restaurante-A3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3635" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/botao_black.xml" value="0.178" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/botao_cadastro.xml" value="0.112" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/botao_white.xml" value="0.178" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.207" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/ic_bt_back.xml" value="0.207" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/ic_globo_black.xml" value="0.207" />
@@ -42,7 +43,9 @@
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/ic_qr_black.xml" value="0.207" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/ic_user.xml" value="0.103" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/ic_xcircle.xml" value="0.207" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/layout_shadow_white.xml" value="0.178" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/view_cadastro.xml" value="0.112" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/view_historico_cliente.xml" value="0.2555" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/drawable/view_menu_cliente.xml" value="0.178" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
@@ -51,13 +54,16 @@
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/activity_main2.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/cadastro_cliente.xml" value="0.25" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/cadastro_restaurante.xml" value="0.23233695652173914" />
-        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/card_restaurantes.xml" value="0.176" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/card_pedidos_cliente.xml" value="0.4" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/card_restaurantes.xml" value="0.4" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/content_main.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/edit_cardapio.xml" value="0.536" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/fragment_second.xml" value="0.25" />
-        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/home_cliente.xml" value="0.2" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/home_cliente.xml" value="0.1" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/loginCliente.xml" value="0.25" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/login_cliente.xml" value="0.264" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/layout/perfil_clienete.xml" value="0.536" />
         <entry key="..\:/Users/rodri/AndroidStudioProjects/RestauranteA3/app/src/main/res/menu/menu_main.xml" value="0.11041666666666666" />
       </map>
     </option>
