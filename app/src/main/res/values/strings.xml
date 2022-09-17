@@ -36,4 +36,16 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <!-- edit pedidos -->
+    <string name="comida">Comida</string>
+    <string name="bebida">Bebida</string>
+    <string name="nome_prato1">Nome do prato 1</string>
+    <string name="nome_prato2">Nome do prato 2</string>
+    <string name="nome_prato3">Nome do prato 3</string>
+    <string name="descricao_prato">Descrição do prato.</string>
+    <string name="add_prato">+</string>
+    <string name="contentDescription_prato1">Imagem prato 1</string>
+    <string name="contentDescription_prato2">Imagem prato 2</string>
+    <string name="contentDescription_prato3">Imagem prato 3</string>
 </resources>

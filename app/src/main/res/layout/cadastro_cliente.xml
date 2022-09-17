@@ -53,7 +53,7 @@
             android:ems="10"
             android:hint="@string/dig_email"
             android:inputType="textEmailAddress"
-            tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
             tools:layout_editor_absoluteX="90dp"
             tools:layout_editor_absoluteY="249dp" />
 
@@ -65,7 +65,7 @@
             android:hint="@string/dig_senha"
             android:inputType="textPassword"
             android:typeface="normal"
-            tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
             tools:layout_editor_absoluteX="90dp"
             tools:layout_editor_absoluteY="308dp" />
 
@@ -76,7 +76,7 @@
             android:ems="10"
             android:hint="@string/dig_nome"
             android:inputType="textPersonName"
-            tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
             tools:layout_editor_absoluteX="90dp"
             tools:layout_editor_absoluteY="189dp" />
 
