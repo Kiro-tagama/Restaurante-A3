@@ -37,6 +37,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
+        android:background="#F44336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
@@ -49,6 +50,8 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="80dp"
         android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
