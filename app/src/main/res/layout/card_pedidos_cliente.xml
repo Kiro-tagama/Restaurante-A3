@@ -12,14 +12,15 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="108dp"
+        android:layout_height="0dp"
         android:background="#F44336"
-        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/open_qr_cliente"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Nome restaurante"
+        android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -38,6 +40,7 @@
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:text="11:30"
+        android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -45,41 +48,37 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="40dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/open_qr_cliente"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:srcCompat="@drawable/ic_edit" />
 
     <ImageButton
         android:id="@+id/open_qr_cliente"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginEnd="111dp"
+        android:layout_marginStart="110dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_qr_green" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="40dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="10dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/open_qr_cliente"
         app:srcCompat="@drawable/ic_trash" />
 </android.support.constraint.ConstraintLayout>
