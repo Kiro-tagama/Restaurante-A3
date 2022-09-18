@@ -11,7 +11,7 @@
         class="android.support.v7.widget.ActionMenuView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/view_cadastro"
+        android:background="@drawable/view_back_white"
         android:backgroundTint="#A6F5E6C2"
         android:orientation="vertical"
         android:padding="30dp"
