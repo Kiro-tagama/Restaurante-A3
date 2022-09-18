@@ -81,7 +81,7 @@
             tools:layout_editor_absoluteY="189dp" />
 
         <Button
-            android:id="@+id/botaoCadastrar"
+            android:id="@+id/bt_cadastrar"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:background="@drawable/botao_black"
