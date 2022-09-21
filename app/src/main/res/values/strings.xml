@@ -17,12 +17,6 @@
     <string name="dig_email">Digite seu e-mail</string>
     <string name="dig_senha">Digite a sua senha</string>
     <string name="dig_nome">Digite seu nome</string>
-    <string name="title_activity_main2">MainActivity2</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
@@ -48,4 +42,8 @@
     <string name="contentDescription_prato1">Imagem prato 1</string>
     <string name="contentDescription_prato2">Imagem prato 2</string>
     <string name="contentDescription_prato3">Imagem prato 3</string>
+
+    <string name="nome">nome</string>
+    <string name="editcardapio">Editar cardapio</string>
+    <string name="pedidos">Pedidos</string>
 </resources>

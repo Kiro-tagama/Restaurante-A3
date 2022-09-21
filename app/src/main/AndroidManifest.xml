@@ -13,17 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestauranteA3"
         tools:targetApi="31">
-        <activity
-            android:name=".Login_restaurante"
-            android:exported="false" />
-        <activity
-            android:name=".Perfil_clienete"
-            android:exported="false"
-            android:theme="@style/Theme.RestauranteA3.NoActionBar" />
-        <activity
-            android:name=".Edit_cardapio"
-            android:exported="false"
-            android:theme="@style/Theme.RestauranteA3.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -43,11 +33,35 @@
             android:exported="false"
             android:theme="@style/Theme.RestauranteA3.NoActionBar" />
         <activity
+            android:name=".Login_restaurante"
+            android:exported="false"
+            android:theme="@style/Theme.RestauranteA3.NoActionBar"/>
+        <activity
             android:name=".Cadastro_restaurante"
             android:exported="false"
             android:theme="@style/Theme.RestauranteA3.NoActionBar" />
+
+        <!-- Cliente -->
         <activity
             android:name=".Home_cliente"
+            android:exported="false"
+            android:theme="@style/Theme.RestauranteA3.NoActionBar" />
+        <activity
+            android:name=".Perfil_clienete"
+            android:exported="false"
+            android:theme="@style/Theme.RestauranteA3.NoActionBar" />
+
+        <!-- Restaurante -->
+        <activity
+            android:name=".Perfil_restaurante"
+            android:exported="false"
+            android:theme="@style/Theme.RestauranteA3.NoActionBar"/>
+        <activity
+            android:name=".Pedidos_restaurante"
+            android:exported="false"
+            android:theme="@style/Theme.RestauranteA3.NoActionBar"/>
+        <activity
+            android:name=".Edit_cardapio"
             android:exported="false"
             android:theme="@style/Theme.RestauranteA3.NoActionBar" />
     </application>

@@ -4,4 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_restaurante"/>
+    android:background="@drawable/background_intro"
+    tools:context=".Login_cliente">
+
+
+    <view
+        android:id="@+id/view"
+        class="android.support.v7.widget.ActionMenuView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_back_white"
+        android:backgroundTint="#A6F5E6C2"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:textAlignment="center"
+        app:barrierDirection="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/restaurante"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/dig_email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="337dp" />
+
+        <EditText
+            android:id="@+id/input_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/dig_senha"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <Button
+            android:id="@+id/bt_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="25dp"
+            android:background="@drawable/botao_black"
+            android:text="@string/entrar"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/sem_conta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/sem_conta"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="473dp" />
+    </view>
+
+</android.support.constraint.ConstraintLayout>

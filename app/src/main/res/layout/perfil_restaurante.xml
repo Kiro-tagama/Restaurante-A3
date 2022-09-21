@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Perfil_restaurante">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#F44336"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00AC1B1B"
+        app:srcCompat="@drawable/ic_edit"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,ImageContrastCheck"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00000000"
+        app:srcCompat="@drawable/ic_exit"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <view
+        android:id="@+id/view3"
+        class="android.support.v7.widget.ActionMenuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/view_historico_cliente"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/nome"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--       <ScrollView
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="529dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include layout="@layout/card_pedidos_cliente"/>
+                <include layout="@layout/card_pedidos_cliente"/>
+            </LinearLayout>
+        </ScrollView>
+   -->
+        <Button
+            android:id="@+id/edit_cardapio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_add"
+            android:text="@string/editcardapio"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="569dp" />
+
+        <Button
+            android:id="@+id/bt_pedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_black"
+            android:text="@string/pedidos"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="569dp" />
+
+    </view>
+
+
+</android.support.constraint.ConstraintLayout>
