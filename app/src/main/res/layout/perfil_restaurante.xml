@@ -104,9 +104,12 @@
                         android:layout_marginRight="10dp"
                         app:srcCompat="@drawable/ic_launcher_foreground"
                         tools:srcCompat="@drawable/ic_globo_black" />
+
                     <TextView
-                        android:layout_height="match_parent"
-                        android:breakStrategy="simple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:breakStrategy="high_quality"
                         android:text="texto e icones provisorios, ai tem um que tem muito textoe queria saber vomo ficaria" />
                 </TableRow>
 
