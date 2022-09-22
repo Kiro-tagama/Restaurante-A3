@@ -27,7 +27,8 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="269dp" />
+        tools:layout_editor_absoluteY="269dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_comida"
@@ -39,7 +40,8 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="269dp" />
+        tools:layout_editor_absoluteY="269dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_confirmar"
@@ -52,7 +54,8 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="634dp" />
+        tools:layout_editor_absoluteY="634dp"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/view_brown"
@@ -97,7 +100,8 @@
         android:layout_height="wrap_content"
         android:text="@string/nome"
         tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/button_site"
@@ -113,7 +117,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_globo_white" />
-
-</View>
 
 </android.support.constraint.ConstraintLayout>

@@ -8,7 +8,7 @@
     tools:context=".Edit_cardapio">
 
     <Button
-        android:id="@+id/botao_back"
+        android:id="@+id/bt_back"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/ic_bt_back"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        tools:ignore="InvalidId,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/botao_comida"

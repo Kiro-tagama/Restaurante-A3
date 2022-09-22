@@ -8,7 +8,7 @@
     tools:context=".Perfil_restaurante">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imagePerfilRestaurante"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="#F44336"
@@ -21,35 +21,39 @@
         android:id="@+id/imageButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#00AC1B1B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_edit"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,ImageContrastCheck"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="18dp" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/bt_logout"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_exit"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="355dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:ignore="InvalidId,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-    <view
-        android:id="@+id/view3"
-        class="android.support.v7.widget.ActionMenuView"
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="225dp"
+        android:orientation="vertical"
         android:background="@drawable/view_historico_cliente"
         android:backgroundTint="@color/white"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="16dp"
+        android:layout_marginTop="225dp"
+
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="251dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -63,26 +67,122 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!--       <ScrollView
-            android:layout_width="350dp"
-            android:layout_height="52dp"
-            tools:layout_editor_absoluteX="23dp"
-            tools:layout_editor_absoluteY="529dp">
 
-            <LinearLayout
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_height="match_parent">
 
-                <include layout="@layout/card_pedidos_cliente"/>
-                <include layout="@layout/card_pedidos_cliente"/>
-            </LinearLayout>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_globo_black" />
+
+                    <TextView android:text="texto e icones provisorios" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_globo_black" />
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:breakStrategy="simple"
+                        android:text="texto e icones provisorios, ai tem um que tem muito textoe queria saber vomo ficaria" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_globo_black" />
+
+                    <TextView android:text="texto e icones provisorios" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_globo_black" />
+
+                    <TextView android:text="texto e icones provisorios" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_globo_black" />
+
+                    <TextView android:text="texto e icones provisorios" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_launcher_foreground"
+                        tools:srcCompat="@drawable/ic_globo_black" />
+
+                    <TextView android:text="texto e icones provisorios" />
+                </TableRow>
+
+
+            </TableLayout>
         </ScrollView>
-   -->
+
         <Button
             android:id="@+id/edit_cardapio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             android:background="@drawable/botao_add"
             android:text="@string/editcardapio"
             tools:layout_editor_absoluteX="129dp"
@@ -98,7 +198,10 @@
             tools:layout_editor_absoluteX="129dp"
             tools:layout_editor_absoluteY="569dp" />
 
-    </view>
+
+
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
