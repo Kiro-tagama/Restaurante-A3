@@ -17,6 +17,7 @@ import com.example.restaurantea3.databinding.HomeClienteBinding;
 
 public class Home_cliente extends AppCompatActivity {
 
+    String[] array={"coisa-1","coisa-2"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +31,14 @@ public class Home_cliente extends AppCompatActivity {
         bt_perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(android.view.View view) {
+
+                System.out.println(array[0]);
+
+                /*
                 Intent intent = new Intent();
                 intent.setClass(getApplicationContext(),Perfil_clienete.class);
                 startActivity(intent);
+                 */
             }
         });
     }
