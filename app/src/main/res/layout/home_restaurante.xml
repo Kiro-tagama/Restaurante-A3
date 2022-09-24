@@ -26,40 +26,44 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="269dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="@+id/button_confirmar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="263dp" />
 
     <Button
         android:id="@+id/button_comida"
         android:layout_width="156dp"
         android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
         android:background="@drawable/botao_black"
         android:text="@string/comida"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="269dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toStartOf="@+id/button_bebida"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="266dp" />
 
     <Button
         android:id="@+id/button_confirmar"
         android:layout_width="354dp"
         android:layout_height="49dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/botao_orange"
         android:text="Confirmar"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="634dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/view_brown"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@drawable/view_menu_cliente"
         app:layout_constraintBottom_toBottomOf="@+id/view_white"
@@ -73,49 +77,39 @@
         android:id="@+id/image_restaurante"
         android:layout_width="160dp"
         android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view_brown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/nome_restaurante"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/restaurante" />
+        app:srcCompat="@drawable/restaurante"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageButton
         android:id="@+id/button_localizacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
         android:background="@drawable/ic_pin_white"
-        app:layout_constraintBottom_toBottomOf="@+id/view_brown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
-        app:layout_constraintStart_toEndOf="@+id/button_site"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/ic_pin_white" />
+        app:srcCompat="@drawable/ic_pin_white"
+        tools:layout_editor_absoluteY="120dp" />
 
     <TextView
         android:id="@+id/nome_restaurante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nome"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
         android:id="@+id/button_site"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/ic_globo_white"
-        app:layout_constraintBottom_toBottomOf="@+id/view_brown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/image_restaurante"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_globo_white" />
+        app:layout_constraintEnd_toStartOf="@+id/button_localizacao"
+        app:srcCompat="@drawable/ic_globo_white"
+        tools:layout_editor_absoluteY="120dp" />
 
 </android.support.constraint.ConstraintLayout>
