@@ -17,15 +17,17 @@
 
         <EditText
             android:id="@+id/input_pesquisa"
-            android:layout_width="281dp"
-            android:layout_height="46dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="75dp"
             android:ems="12"
+            android:hint="@string/pesquisar_restaurante"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bt_perfil"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.482" />
 
         <ImageButton
             android:id="@+id/bt_perfil"
@@ -33,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:background="#00FFFFFF"
+
             app:layout_anchor="@+id/view6"
             app:layout_anchorGravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -42,10 +45,18 @@
             tools:ignore="InvalidId" />
     </android.support.constraint.ConstraintLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_restaurantes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/card_restaurantes" />
+    <!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="top"
         android:layout_marginTop="80dp">
 
         <LinearLayout
@@ -54,23 +65,15 @@
             android:orientation="vertical"
             android:paddingHorizontal="10dp">
 
-            <include layout="@layout/card_restaurantes"
-                android:id="@+id/card_restaurante" />
 
-            <include layout="@layout/card_restaurantes" />
-
-            <include layout="@layout/card_restaurantes" />
-
-            <include layout="@layout/card_restaurantes" />
-
-            <include layout="@layout/card_restaurantes" />
-
-            <include layout="@layout/card_restaurantes" />
-
-            <include layout="@layout/card_restaurantes" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lista_restaurantes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/card_restaurantes"/>
 
         </LinearLayout>
     </ScrollView>
-
-
+    -->
 </android.support.design.widget.CoordinatorLayout>

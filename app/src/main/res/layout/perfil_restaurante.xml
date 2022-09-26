@@ -50,7 +50,7 @@
         android:background="@drawable/view_historico_cliente"
         android:backgroundTint="@color/white"
         android:padding="16dp"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="200dp"
 
         tools:layout_editor_absoluteX="140dp"
         tools:layout_editor_absoluteY="251dp">
@@ -70,7 +70,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="280dp">
+            android:layout_height="wrap_content">
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -108,8 +108,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingRight="20dp"
                         android:breakStrategy="high_quality"
+                        android:paddingRight="20dp"
                         android:text="texto e icones provisorios, ai tem um que tem muito textoe queria saber vomo ficaria" />
                 </TableRow>
 
@@ -145,38 +145,7 @@
                     <TextView android:text="texto e icones provisorios" />
                 </TableRow>
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginVertical="8dp">
-
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginRight="10dp"
-                        app:srcCompat="@drawable/ic_launcher_foreground"
-                        tools:srcCompat="@drawable/ic_globo_black" />
-
-                    <TextView android:text="texto e icones provisorios" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginVertical="8dp">
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginRight="10dp"
-                        app:srcCompat="@drawable/ic_launcher_foreground"
-                        tools:srcCompat="@drawable/ic_globo_black" />
-
-                    <TextView android:text="texto e icones provisorios" />
-                </TableRow>
-
+                
 
             </TableLayout>
         </ScrollView>
@@ -200,9 +169,6 @@
             android:textColor="@color/white"
             tools:layout_editor_absoluteX="129dp"
             tools:layout_editor_absoluteY="569dp" />
-
-
-
 
     </LinearLayout>
 

@@ -46,4 +46,5 @@
     <string name="nome">nome</string>
     <string name="editcardapio">Editar cardapio</string>
     <string name="pedidos">Pedidos</string>
+    <string name="pesquisar_restaurante">Pesquisar restaurante</string>
 </resources>
