@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.restaurantea3.Conections.Cadastra;
+
 public class Cadastro_cliente extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,20 @@ public class Cadastro_cliente extends AppCompatActivity {
         bt_cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String nome,email,senha;
+
                 System.out.println(inputNome.getText()); //pegou o texto
+
+                try {
+                    Cadastra.cria_usuario(
+                            inputNome.getText().toString(),
+                            inputEmail.getText().toString(),
+                            inputSenha.getText().toString(),
+                            11,11,"null","null","null","null","null","null"
+                    );
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 //criar a api e enviar e esperar uma promessa (try,catch)
             }

@@ -27,6 +27,8 @@ public class Home_cliente extends AppCompatActivity {
         bt_perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(android.view.View view) {
+
+
                 Intent intent = new Intent();
                 intent.setClass(getApplicationContext(),Perfil_clienete.class);
                 startActivity(intent);

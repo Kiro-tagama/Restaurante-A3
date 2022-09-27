@@ -1,9 +1,13 @@
+package com.example.restaurantea3.Conections;
+
+import android.text.Editable;
+
 import java.sql.*;
 
-public class App {
+public class Cadastra {
 
-    static void cria_usuario(String nome, String email, String senha, int ddd, int telefone, String endereco,
-            String bairro, String cidade, String estado, String validade_cartao, String codigo_cartao)
+    public static void cria_usuario(String nome, String email, String senha, int ddd, int telefone, String endereco,
+                                    String bairro, String cidade, String estado, String validade_cartao, String codigo_cartao)
             throws Exception {
         try {
             Class.forName("com.mysql.jdbc.Driver");
