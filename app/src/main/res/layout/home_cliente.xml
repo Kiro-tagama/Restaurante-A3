@@ -45,6 +45,7 @@
             tools:ignore="InvalidId" />
     </android.support.constraint.ConstraintLayout>
 
+    <!--
     <android.support.v7.widget.RecyclerView
         android:id="@+id/lista_restaurantes"
         android:layout_width="match_parent"
@@ -52,6 +53,7 @@
         android:layout_marginTop="80dp"
         app:layoutManager="android.support.v7.widget.LinearLayoutManager"
         tools:listitem="@layout/card_restaurantes" />
+    -->
     <!--
     <ScrollView
         android:layout_width="match_parent"

@@ -1,10 +1,11 @@
 package com.example.restaurantea3.Conections;
 
+
 import java.sql.*;
 
 public class Authentica {
 
-    static void authentica_usuario(String email, String senha) {
+    public static void authentica_usuario(String email, String senha) {
 
         try {
             // Conectando na tabela de usuários
@@ -43,10 +44,14 @@ public class Authentica {
     }
 
     public static void main(String[] args) {
-
+        /*
         String email = "carloseduardovpereira@gmail.com";
         String senha = "senha1234";
 
         authentica_usuario(email, senha);
+
+         */
     }
+
+
 }

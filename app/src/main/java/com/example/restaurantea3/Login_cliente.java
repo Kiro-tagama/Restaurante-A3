@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.restaurantea3.Conections.Authentica;
+
 public class Login_cliente extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,18 @@ public class Login_cliente extends AppCompatActivity{
 
         bt_entrar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(android.view.View view) {
+            public void onClick(View view) {
+
+
+                try {
+                    Authentica.authentica_usuario(
+                            input_email.getText().toString(),
+                            input_pass.getText().toString()
+                    );
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
                 Intent intent = new Intent();
                 intent.setClass(getApplicationContext(),Home_cliente.class);
                 startActivity(intent);

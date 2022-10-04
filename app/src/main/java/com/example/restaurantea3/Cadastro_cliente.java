@@ -3,6 +3,7 @@ package com.example.restaurantea3;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,17 +40,23 @@ public class Cadastro_cliente extends AppCompatActivity {
 
                 System.out.println(inputNome.getText()); //pegou o texto
 
+                nome =inputNome.getText().toString();
+                        email=inputEmail.getText().toString();
+                        senha=inputSenha.getText().toString();
                 try {
                     Cadastra.cria_usuario(
-                            inputNome.getText().toString(),
-                            inputEmail.getText().toString(),
-                            inputSenha.getText().toString(),
+                            nome,email,senha,
                             11,11,"null","null","null","null","null","null"
                     );
+                    Log.i("valor var nome", nome );
                 } catch (Exception e) {
                     e.printStackTrace();
+                    return;
                 }
 
+                Intent intent = new Intent();
+                intent.setClass(getApplicationContext(),Home_cliente.class);
+                startActivity(intent);
                 //criar a api e enviar e esperar uma promessa (try,catch)
             }
         });

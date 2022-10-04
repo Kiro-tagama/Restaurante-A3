@@ -22,7 +22,7 @@ public class Home_cliente extends AppCompatActivity {
         ImageButton bt_perfil = (ImageButton) findViewById(R.id.bt_perfil);
         //View card_restaurante = (View) findViewById(R.id.card_restaurante); // n sei se esse é exatamente uma view
 
-        RecyclerView lista_restaurantes = (RecyclerView) findViewById(R.id.lista_restaurantes);
+        //RecyclerView lista_restaurantes = (RecyclerView) findViewById(R.id.lista_restaurantes);
 
         bt_perfil.setOnClickListener(new View.OnClickListener() {
             @Override

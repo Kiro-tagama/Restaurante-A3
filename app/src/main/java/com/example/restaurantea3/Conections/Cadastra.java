@@ -1,13 +1,19 @@
 package com.example.restaurantea3.Conections;
 
 import android.text.Editable;
+import android.util.Log;
 
 import java.sql.*;
 
 public class Cadastra {
 
+    String nome="rodrigo";
+    String email="rodrigo";
+    String senha="rodrigo";
+
     public static void cria_usuario(String nome, String email, String senha, int ddd, int telefone, String endereco,
                                     String bairro, String cidade, String estado, String validade_cartao, String codigo_cartao)
+
             throws Exception {
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -23,7 +29,11 @@ public class Cadastra {
             stmt.executeUpdate(query1);
             System.out.println("Record is inserted in the table successfully!");
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println("Erro" + e);
+            Log.i("Erro ao conectar", String.valueOf(e.getCause()));
+            Log.i("Erro ao conectar", (e.getMessage()));
+
+
         }
     }
 
