@@ -1,5 +1,6 @@
 package com.example.restaurantea3.Conections;
 
+import android.os.StrictMode;
 import android.text.Editable;
 import android.util.Log;
 
@@ -7,18 +8,22 @@ import java.sql.*;
 
 public class Cadastra {
 
-    String nome="rodrigo";
-    String email="rodrigo";
-    String senha="rodrigo";
+//    String nome="rodrigo";
+//    String email="rodrigo";
+//    String senha="rodrigo";
 
     public static void cria_usuario(String nome, String email, String senha, int ddd, int telefone, String endereco,
                                     String bairro, String cidade, String estado, String validade_cartao, String codigo_cartao)
 
             throws Exception {
         try {
+            StrictMode.ThreadPolicy gfgPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(gfgPolicy);
+
+            System.out.println("saida do nome:"+nome);
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/restaurante_a3", "root", "grupodaa32022");
+                    "jdbc:mysql://10.96.152.131:3306/restaurante_a3", "rodrigo", "123456");
 
             Statement stmt = con.createStatement();
             String query1 = "INSERT INTO tb_usuario (`nome`,`email`, `senha`, `ddd`, `telefone`, `endereco`, `bairro`, `cidade`, `estado`, `num_cartao`, `validade_cartao`, `codigo_cartao`) ";
@@ -32,8 +37,6 @@ public class Cadastra {
             System.out.println("Erro" + e);
             Log.i("Erro ao conectar", String.valueOf(e.getCause()));
             Log.i("Erro ao conectar", (e.getMessage()));
-
-
         }
     }
 
@@ -42,7 +45,7 @@ public class Cadastra {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/restaurante_a3", "root", "grupodaa32022");
+                    "jdbc:mysql://10.96.152.131s:3306/restaurante_a3", "rodrigo", "123456");
 
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from tb_usuario");

@@ -38,11 +38,10 @@ public class Cadastro_cliente extends AppCompatActivity {
             public void onClick(View view) {
                 String nome,email,senha;
 
-                System.out.println(inputNome.getText()); //pegou o texto
-
                 nome =inputNome.getText().toString();
-                        email=inputEmail.getText().toString();
-                        senha=inputSenha.getText().toString();
+                email=inputEmail.getText().toString();
+                senha=inputSenha.getText().toString();
+
                 try {
                     Cadastra.cria_usuario(
                             nome,email,senha,

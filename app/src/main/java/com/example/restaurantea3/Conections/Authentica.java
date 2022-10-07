@@ -1,17 +1,21 @@
 package com.example.restaurantea3.Conections;
 
 
+import android.os.StrictMode;
+
 import java.sql.*;
 
 public class Authentica {
 
     public static void authentica_usuario(String email, String senha) {
+        StrictMode.ThreadPolicy gfgPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(gfgPolicy);
 
         try {
             // Conectando na tabela de usuários
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/restaurante_a3", "root", "grupodaa32022");
+                    "jdbc:mysql://10.96.152.131:3306/restaurante_a3", "rodrigo", "123456");
 
             Statement stmt = con.createStatement();
             String Query = "select usuario_id, nome from tb_usuario where email = '" + email + "' and senha = '" + senha
