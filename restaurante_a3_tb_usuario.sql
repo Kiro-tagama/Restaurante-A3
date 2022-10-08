@@ -1,7 +1,3 @@
--- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
---
--- Host: localhost    Database: restaurante_a3
--- ------------------------------------------------------
 -- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -18,6 +14,7 @@
 --
 -- Table structure for table `tb_usuario`
 --
+grant all privileges on *.* to 'root'@'localhost' with grant option;
 
 DROP TABLE IF EXISTS `tb_usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -27,15 +24,15 @@ CREATE TABLE `tb_usuario` (
   `nome` varchar(100) NOT NULL,
   `email` varchar(200) NOT NULL,
   `senha` varchar(200) NOT NULL,
-  `ddd` varchar(2) NOT NULL,
+  `ddd` varchar(10) NOT NULL,
   `telefone` varchar(9) NOT NULL,
   `endereco` varchar(200) NOT NULL,
   `bairro` varchar(100) NOT NULL,
   `cidade` varchar(40) NOT NULL,
-  `estado` varchar(2) NOT NULL,
+  `estado` varchar(10) NOT NULL,
   `num_cartao` varchar(16) DEFAULT NULL,
   `validade_cartao` varchar(4) DEFAULT NULL,
-  `codigo_cartao` varchar(3) DEFAULT NULL,
+  `codigo_cartao` varchar(10) DEFAULT NULL,
   `flag_ativo` bit(1) DEFAULT NULL,
   PRIMARY KEY (`usuario_id`),
   UNIQUE KEY `usuario_id_UNIQUE` (`usuario_id`)
@@ -60,5 +57,3 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2022-09-27 19:10:02

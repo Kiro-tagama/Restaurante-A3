@@ -3,6 +3,7 @@ package com.example.restaurantea3;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,8 +35,6 @@ public class Login_cliente extends AppCompatActivity{
         bt_entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 try {
                     Authentica.authentica_usuario(
                             input_email.getText().toString(),
@@ -43,6 +42,7 @@ public class Login_cliente extends AppCompatActivity{
                     );
                 } catch (Exception e) {
                     e.printStackTrace();
+                    System.out.println(e.getMessage());
                 }
 
                 Intent intent = new Intent();
