@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.restaurantea3.Conections.Authentica;
+
 public class Login_restaurante extends AppCompatActivity {
 
     @Override
@@ -33,9 +35,29 @@ public class Login_restaurante extends AppCompatActivity {
         bt_entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(android.view.View view) {
-                Intent intent = new Intent();
-                intent.setClass(getApplicationContext(),Perfil_restaurante.class);
-                startActivity(intent);
+                String email,senha;
+                email=input_email.getText().toString();
+                senha=input_pass.getText().toString();
+
+                if(email.length()<=0 || senha.length()<=0 ) return;
+
+                bt_entrar.setText("aguarde...");
+
+                try {
+                    Authentica.authentica_usuario(email,senha);
+                }catch (Exception e){
+                    bt_entrar.setText("ENTRAR");
+                    return;
+                }
+
+                Authentica status =new Authentica();
+
+                if (status.getStatus() == true) {
+                    Intent intent = new Intent();
+                    intent.setClass(getApplicationContext(), Perfil_restaurante.class);
+                    startActivity(intent);
+                }
+                bt_entrar.setText("ENTRAR");
             }
         });
     }

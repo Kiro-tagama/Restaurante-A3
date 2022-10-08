@@ -49,7 +49,7 @@
             tools:layout_editor_absoluteY="144dp" />
 
         <EditText
-            android:id="@+id/inputEmail"
+            android:id="@+id/input_email_restaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -60,7 +60,7 @@
             tools:layout_editor_absoluteY="249dp" />
 
         <EditText
-            android:id="@+id/inputSenha"
+            android:id="@+id/input_pass_restaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -72,7 +72,7 @@
             tools:layout_editor_absoluteY="307dp" />
 
         <EditText
-            android:id="@+id/inputNome"
+            android:id="@+id/input_nome_restaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
