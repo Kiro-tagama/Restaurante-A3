@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.restaurantea3.Conections.Authentica;
 import com.example.restaurantea3.Conections.Cadastra;
 
 public class Cadastro_cliente extends AppCompatActivity {
@@ -42,20 +43,35 @@ public class Cadastro_cliente extends AppCompatActivity {
                 email=inputEmail.getText().toString();
                 senha=inputSenha.getText().toString();
 
+                if(nome.length() <=0 || email.length()<=0 || senha.length()<=0 ) return;
+
+                bt_cadastrar.setText("Aguarde ...");
+
                 try {
                     Cadastra.cria_usuario(
                             nome,email,senha,
-                            11,11,"null","null","null","null","null","null"
+                            11,11,"null","null",
+                            "null","null","null","null"
                     );
-                    Log.i("valor var nome", nome );
+                    try {
+                        Authentica.authentica_usuario(email,senha);
+                    }catch (Exception e){
+                        return;
+                    }
+
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    bt_cadastrar.setText("Cadastrar");
                     return;
                 }
 
-                Intent intent = new Intent();
-                intent.setClass(getApplicationContext(),Home_cliente.class);
-                startActivity(intent);
+                Authentica status =new Authentica();
+
+                if (status.getStatus() == true) {
+                    Intent intent = new Intent();
+                    intent.setClass(getApplicationContext(), Home_cliente.class);
+                    startActivity(intent);
+                }
+                bt_cadastrar.setText("Cadastrar");
                 //criar a api e enviar e esperar uma promessa (try,catch)
             }
         });

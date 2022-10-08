@@ -6,6 +6,7 @@ import android.os.StrictMode;
 import java.sql.*;
 
 public class Authentica {
+    static boolean status;
 
     public static void authentica_usuario(String email, String senha) {
         StrictMode.ThreadPolicy gfgPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -15,7 +16,7 @@ public class Authentica {
             // Conectando na tabela de usuários
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://10.96.152.131:3306/restaurante_a3", "rodrigo", "123456");
+                    "jdbc:mysql://192.168.1.101:3306/restaurante_a3", "rodrigo", "123456");
 
             Statement stmt = con.createStatement();
             String Query = "select usuario_id, nome from tb_usuario where email = '" + email + "' and senha = '" + senha
@@ -33,29 +34,37 @@ public class Authentica {
 
             if (size > 0) {
                 System.out.println("Usuário authenticado. " + rs.getInt(1));
-
+                setStatus(true);
             } else {
                 System.out.println("Email e(ou) senha inválido. ");
-
+                setStatus(false);
             }
 
             con.close();
-
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println("err:"+e);
+
         }
 
     }
 
+    public boolean getStatus(){
+        return status;
+    }
+    public static boolean setStatus(boolean dado){
+        return status = dado;
+    }
+
+    /*
     public static void main(String[] args) {
-        /*
+        
         String email = "carloseduardovpereira@gmail.com";
         String senha = "senha1234";
 
         authentica_usuario(email, senha);
+        
 
-         */
     }
-
+    */
 
 }

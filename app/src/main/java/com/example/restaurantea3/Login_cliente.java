@@ -35,19 +35,29 @@ public class Login_cliente extends AppCompatActivity{
         bt_entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String email,senha;
+                email=input_email.getText().toString();
+                senha=input_pass.getText().toString();
+
+                if(email.length()<=0 || senha.length()<=0 ) return;
+
+                bt_entrar.setText("aguarde...");
+
                 try {
-                    Authentica.authentica_usuario(
-                            input_email.getText().toString(),
-                            input_pass.getText().toString()
-                    );
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    System.out.println(e.getMessage());
+                    Authentica.authentica_usuario(email,senha);
+                }catch (Exception e){
+                    bt_entrar.setText("ENTRAR");
+                    return;
                 }
 
-                Intent intent = new Intent();
-                intent.setClass(getApplicationContext(),Home_cliente.class);
-                startActivity(intent);
+                Authentica status =new Authentica();
+
+                if (status.getStatus() == true) {
+                    Intent intent = new Intent();
+                    intent.setClass(getApplicationContext(), Home_cliente.class);
+                    startActivity(intent);
+                }
+                bt_entrar.setText("ENTRAR");
             }
         });
 
