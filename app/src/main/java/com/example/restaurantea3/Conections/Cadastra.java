@@ -22,8 +22,8 @@ public class Cadastra {
 
             System.out.println("saida do nome:"+nome);
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://192.168.1.101:3306/restaurante_a3", "rodrigo", "123456");
+
+            Connection con = DriverManager.getConnection(Keys.link(), Keys.user(), Keys.pass());
 
             Statement stmt = con.createStatement();
             String query1 = "INSERT INTO tb_usuario (`nome`,`email`, `senha`, `ddd`, `telefone`, `endereco`, `bairro`, `cidade`, `estado`, `num_cartao`, `validade_cartao`, `codigo_cartao`) ";
@@ -44,8 +44,8 @@ public class Cadastra {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://192.168.1.101:3306/restaurante_a3", "rodrigo", "123456");
+
+            Connection con = DriverManager.getConnection(Keys.link(), Keys.user(), Keys.pass());
 
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from tb_usuario");

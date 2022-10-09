@@ -15,8 +15,8 @@ public class Authentica {
         try {
             // Conectando na tabela de usuários
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://192.168.1.101:3306/restaurante_a3", "rodrigo", "123456");
+
+            Connection con = DriverManager.getConnection(Keys.link(), Keys.user(), Keys.pass());
 
             Statement stmt = con.createStatement();
             String Query = "select usuario_id, nome from tb_usuario where email = '" + email + "' and senha = '" + senha

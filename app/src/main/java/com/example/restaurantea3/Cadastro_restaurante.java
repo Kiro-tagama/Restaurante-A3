@@ -60,7 +60,6 @@ public class Cadastro_restaurante extends AppCompatActivity {
                     startActivity(intent);
                 }
                 bt_cadastrar.setText("Cadastrar");
-                //criar a api e enviar e esperar uma promessa (try,catch)
             }
         });
     }
