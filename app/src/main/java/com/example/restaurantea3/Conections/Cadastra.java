@@ -8,10 +8,6 @@ import java.sql.*;
 
 public class Cadastra {
 
-//    String nome="rodrigo";
-//    String email="rodrigo";
-//    String senha="rodrigo";
-
     public static void cria_usuario(String nome, String email, String senha, int ddd, int telefone, String endereco,
                                     String bairro, String cidade, String estado, String validade_cartao, String codigo_cartao)
 
@@ -28,7 +24,7 @@ public class Cadastra {
             Statement stmt = con.createStatement();
             String query1 = "INSERT INTO tb_usuario (`nome`,`email`, `senha`, `ddd`, `telefone`, `endereco`, `bairro`, `cidade`, `estado`, `num_cartao`, `validade_cartao`, `codigo_cartao`) ";
             query1 = query1 + "VALUES ";
-            query1 = query1 + "('" + nome + "','" + email + "','" + senha + "','" + senha + "','" + ddd + "','"
+            query1 = query1 + "('" + nome + "','" + email + "','" + senha + "','" + ddd + "','"
                     + telefone + "','" + endereco + "','" + bairro + "','" + cidade + "','" + estado + "','"
                     + validade_cartao + "','" + codigo_cartao + "')";
             stmt.executeUpdate(query1);
