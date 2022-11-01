@@ -1,0 +1,5 @@
+insert into tb_restaurantes
+values
+(2, 'emailoutback123@gmail.com', 'senha123'),
+(3, 'emailpizzahut@gmail.com', 'senha123'),
+(4, 'emailbk123@gmail.com', 'senha123');
