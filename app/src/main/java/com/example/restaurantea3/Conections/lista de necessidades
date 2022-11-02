@@ -1,0 +1,28 @@
+
+  [x] autentica
+  [x] cadastro
+
+
+--- Cliente
+
+  [] pegar dados de usuario logado
+
+  [] mostrar lista de restaurante
+  [] pesquisar restaurantes e alterar a mesma lista
+
+  [] lista de pratos (armazenar em uma var para ser utilizada e n sei se funciona dentro da main, e eu devo mandar o id do restaurante)
+  [] enviar check para paratos
+  [] receber pratos e gerar pedido
+
+
+--- Restaurante
+
+  [] pegar dados do usuario logado (para ambos)
+
+  [] lista de pratos do restaurante
+  [x] editar-los
+
+  [] mostrar parte dos pedidos (lista)
+
+
+--- QR code

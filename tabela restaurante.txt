@@ -1,4 +1,0 @@
-CREATE TABLE tb_restaurantes(
-restaurante_id int(4) AUTO_INCREMENT PRIMARY KEY NOT NULL,
-email varchar(100) NOT NULL,
-senha varchar(100) NOT NULL);
