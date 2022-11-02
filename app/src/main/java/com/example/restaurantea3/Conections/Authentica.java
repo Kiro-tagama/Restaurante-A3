@@ -55,16 +55,13 @@ public class Authentica {
         return status = dado;
     }
 
-    /*
     public static void main(String[] args) {
         
         String email = "carloseduardovpereira@gmail.com";
         String senha = "senha1234";
 
         authentica_usuario(email, senha);
-        
 
     }
-    */
 
 }
